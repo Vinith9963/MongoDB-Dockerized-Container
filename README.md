@@ -12,9 +12,8 @@
 9) show collections - moviescollection
 
 # Main Commands
-1) Following method retrieves all the documents in the collection
-   
-    db.moviescollection.find()
+1) Following method retrieves all the documents in the collection.
+db.moviescollection.find()
    
 3) findOne() method, that returns only one document
     db.moviescollection.findOne()
