@@ -13,12 +13,14 @@
 
 # Main Commands
 1) Following method retrieves all the documents in the collection
+   
     db.moviescollection.find()
-2) findOne() method, that returns only one document
+   
+3) findOne() method, that returns only one document
     db.moviescollection.findOne()
-3) The following operation counts the documents in a collection of moviesdb
+4) The following operation counts the documents in a collection of moviesdb
     db.moviescollection.aggregate( [{ $count: "total_number_of_movies" }])
-4) Converting ratingValue field to float to make certain operations applicable on it.
+5) Converting ratingValue field to float to make certain operations applicable on it.
     db.moviescollection.find().forEach((d) => {
     d["ratingValue"] = parseFloat(d["ratingValue"]);
     db.moviescollection.save(d);
